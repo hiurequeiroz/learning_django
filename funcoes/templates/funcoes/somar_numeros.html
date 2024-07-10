@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar Números</title>
+</head>
+<body>
+    <h1>Somar Numeros</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="numeros">Digite uma lista de numeros separado por virgula:</label>
+        <input type="text" id="numeros" name="numeros">
+        <button type="submit">Somar</button>
+    </form>
+
+    {% if resultado %}
+        <p>O resultado da soma é: {{ resultado }}</p>
+    {% endif %}
+</body>
+</html>
