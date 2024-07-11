@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('par_impar/', include('par_impar.urls')),
     path('funcoes/', include('funcoes.urls')),
+    path('palindromo/', include('palindromo.urls')),
 ]
