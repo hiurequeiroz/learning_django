@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'variaveis',
     'par_impar',
     'funcoes',
+    'palindromo',
 ]
 
 MIDDLEWARE = [
