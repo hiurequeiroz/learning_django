@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Palindromo</title>
+</head>
+<body>
+    <h1>Verifica se a palavra é um Palindromo</h1>
+    <p>Um palindromo é uma palavra que mesmo invertendo a ordem das letras de trás para frente a palavra continua a mesma</p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="palavra">Digite uma palavra para verificar se é palindromo:</label>
+        <input type="text" id="palavra" name="palavra" required>
+        <button type="submit">Verificar</button>
+    </form>
+
+    {% if resultado is not None %}
+        <p>A palavra é um palindromo: {{ resultado }}</p>
+    {% endif %}
+</body>
+</html>
