@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'par_impar',
     'funcoes',
     'palindromo',
+    'manipula_string'
 ]
 
 MIDDLEWARE = [
