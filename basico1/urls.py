@@ -22,4 +22,5 @@ urlpatterns = [
     path('par_impar/', include('par_impar.urls')),
     path('funcoes/', include('funcoes.urls')),
     path('palindromo/', include('palindromo.urls')),
+    path('manipula_string/', include('manipula_string.urls')),
 ]
