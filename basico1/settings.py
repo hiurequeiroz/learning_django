@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'funcoes',
     'palindromo',
     'manipula_string',
+    'lista_dicionario',
 ]
 
 MIDDLEWARE = [

@@ -23,4 +23,5 @@ urlpatterns = [
     path('funcoes/', include('funcoes.urls')),
     path('palindromo/', include('palindromo.urls')),
     path('manipula_string/', include('manipula_string.urls')),
+    path('lista_dicionario/', include('lista_dicionario.urls')),
 ]
