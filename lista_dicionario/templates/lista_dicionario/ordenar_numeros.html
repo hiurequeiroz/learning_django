@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenador Numérico</title>
+</head>
+<body>
+    <h1>Boas vindas ao Ordenador numérico</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="numeros">Digite uma sequencia de numeros separados por virgula:</label>
+        <input type="text" id="numeros" name="numeros" required>
+        <button type="submit">Ordenar Números</button>
+    </form>
+    {% if resultado is not None %}
+        <h2>Os numeros ordenados são: {{ resultado }}</h2>
+    {% endif %}
+
+</body>
+</html>
