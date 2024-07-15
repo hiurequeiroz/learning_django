@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavras</title>
+</head>
+<body>
+    <h1>Boas vindas ao Contador de Palavras</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="frase">Digite uma frase para contar a frequencia das palavras:</label>
+        <input type="text" id="frase" name="frase" required>
+        <button type="submit">Contar Palavras</button>
+    </form>
+    {% if resultado is not None %}
+        <h2>A frequencia das palavras é: {{ resultado }}</h2>
+    {% endif %}
+
+</body>
+</html>
